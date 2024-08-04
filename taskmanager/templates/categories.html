@@ -20,7 +20,9 @@
             </div>
             <div class="card-action">
                 <a href="{{ url_for('edit_category', category_id=category.id) }}" class="btn green accent-4">Edit</a>
-                <a href="#" class="btn red">Delete</a>
+                <a href="{{ url_for('delete_category', category_id=category.id) }}" class="btn red">Delete</a>
+                <!-- TODO - Add a modal to the delete button, create the modal id using the category_id and 
+                            template literals in order to create a modal for each category. -->
             </div>
         </div>
     </div>
